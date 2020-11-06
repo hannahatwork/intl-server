@@ -14,22 +14,21 @@ const getTranslations = async (appId, lang, body) => {
     return await initializeIntl(body)
 }
 
-const getJSON = (lang, body) => {
-    let json;
-
-    // replace with call to S3 or other external storage
+const getJSON = (appId, lang) => {
     switch (lang) {
         case "fr":
-            json = fr;
-            break;
+            return fr[appId];
         case "en":
         default:
-            json = en;
-            break;
+            return en[appId];
     }
-
-    return _.pick(json, body);
 }
+
+app.use((_, res, next) => {
+    res.header('Access-Control-Allow-Origin', '*')
+    res.header('Access-Control-Allow-Headers', '*')
+    next()
+})
 
 app.use(express.json())
 
@@ -37,18 +36,17 @@ app.get("/", (req, res) => {
     res.send("hello world")
 })
 
-app.get("/json/:lang", (req, res) => {
-    const { lang } = req.params
-    const { body } = req
+app.get("/json/:appId/:lang", (req, res) => {
+    const { appId, lang } = req.params
 
     if (!lang) {
         res.status(404).send()
     }
 
-    const picked = getJSON(lang, body)
-    res.status(200).send(res.json(picked))
+    const picked = getJSON(appId, lang)
+    console.log({ req, lang, picked })
+    res.status(200).send(res.json({ demo: picked }))
 })
-
 
 app.get("/translations/:appId/:lang", async (req, res) => {
     const { appId, lang } = req.params

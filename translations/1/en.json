@@ -1,5 +1,12 @@
 {
-  "welcome": "Welcome, {{firstName}}!",
-  "locationInfo": "{{practice.name}} is located in {{practice.countryWithArticle}}",
-  "noVariables": "And this one has no variables"
+  "1": {
+    "title": "Translation demo",
+    "text": "This is a simple demonstration app for ngx-translate",
+    "greeting": "Hello {{name}}!"
+  },
+  "2": {
+    "welcome": "Welcome, {{firstName}}!",
+    "locationInfo": "{{practice.name}} is located in {{practice.countryWithArticle}}",
+    "noVariables": "And this one has no variables"
+  }
 }
