@@ -1,5 +1,17 @@
 {
-  "welcome": "Bienvenue, {{firstName}}!",
-  "locationInfo": "{{practice.name}} est situé {{practice.countryWithArticle}}",
-  "noVariables": "Et celui-ci n'a pas des variables"
+  "1": {
+    "title": "Démo de la traduction",
+    "text": "Ceci est un exemple simple du ngx-translate",
+    "greeting": "Salut {{name}}!",
+    "languageSelection": "Sélectionnez votre langue",
+    "languages": {
+      "fr": "Français",
+      "en": "English"
+    }
+  },
+  "2": {
+    "welcome": "Bienvenue, {{firstName}}!",
+    "locationInfo": "{{practice.name}} est situé {{practice.countryWithArticle}}",
+    "noVariables": "Et celui-ci n'a pas des variables"
+  }
 }

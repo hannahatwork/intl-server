@@ -2,7 +2,12 @@
   "1": {
     "title": "Translation demo",
     "text": "This is a simple demonstration app for ngx-translate",
-    "greeting": "Hello {{name}}!"
+    "greeting": "Hello {{name}}!",
+    "languageSelection": "Select language",
+    "languages": {
+      "fr": "Français",
+      "en": "English"
+    }
   },
   "2": {
     "welcome": "Welcome, {{firstName}}!",
