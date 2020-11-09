@@ -2,11 +2,15 @@
   "1": {
     "title": "Démo de la traduction",
     "text": "Ceci est un exemple simple du ngx-translate",
-    "greeting": "Salut {{name}}!",
+    "greeting": "Salut {name}!",
     "languageSelection": "Sélectionnez votre langue",
     "languages": {
       "fr": "Français",
       "en": "English"
+    },
+    "pluralization": {
+      "things": "Il {count, plural, =0{n'y a} other{y a}} {count, plural =0{} one{un} other{des}} {count, plural =0{rien} one{chose} other{choses}}",
+      "people": "{gender, select, male{Il est} female{Elle est} other{Ils sont}} {gender, select, male{drôle} female{drôle} other{drôles}}"
     }
   },
   "2": {
