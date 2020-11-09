@@ -9,7 +9,7 @@
       "en": "English"
     },
     "pluralization": {
-      "things": "Il {count, plural, =0{n'y a} other{y a}} {count, plural =0{} one{un} other{des}} {count, plural =0{rien} one{chose} other{choses}}",
+      "things": "Il {count, plural, =0{n'y a} one{y a} other{ya}} {count, plural, =0{} one{un} other{quelques}} {count, plural, =0{rien} one{chose} other{choses}}",
       "people": "{gender, select, male{Il est} female{Elle est} other{Ils sont}} {gender, select, male{drôle} female{drôle} other{drôles}}"
     }
   },
