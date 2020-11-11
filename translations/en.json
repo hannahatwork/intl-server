@@ -1,5 +1,0 @@
-{
-  "welcome": "Welcome, {{firstName}}!",
-  "locationInfo": "{{practice.name}} is located in {{practice.countryWithArticle}}",
-  "noVariables": "And this one has no variables"
-}
