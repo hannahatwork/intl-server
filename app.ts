@@ -1,4 +1,3 @@
-const initializeIntl = require('./intl.ts')
 const _ = require('lodash')
 const en = require('./translations/1/en')
 const fr = require('./translations/1/fr')
