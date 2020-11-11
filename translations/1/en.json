@@ -4,9 +4,19 @@
     "text": "This is a simple demonstration app for ngx-translate",
     "greeting": "Hello {name}!",
     "languageSelection": "Select language",
+    "currencySelection": "Select currency",
+    "localeSelection": "Select locale",
     "languages": {
       "fr": "Français",
       "en": "English"
+    },
+    "currency": {
+      "EUR": "€",
+      "USD": "$"
+    },
+    "locale": {
+      "en-EN": "United States",
+      "fr-FR": "France"
     },
     "pluralization": {
       "things": "There {count, plural, =0{is} one{is} other{are}} {count, plural, =0{} one{a} other{several}} {count, plural, =0{nothing} one{thing} other{things}}",

@@ -48,6 +48,18 @@ app.get("/json/:appId/:lang", (req, res) => {
     res.status(200).send(res.json({ demo: picked }))
 })
 
+// app.get("/locale", (req, res) => {
+//     const { appId, lang } = req.params
+//
+//     if (!lang) {
+//         res.status(404).send()
+//     }
+//
+//     const picked = getJSON(appId, lang)
+//     console.log({ req, lang, picked })
+//     res.status(200).send(res.json({ demo: picked }))
+// })
+
 app.get("/translations/:appId/:lang", async (req, res) => {
     const { appId, lang } = req.params
     const { body } = req
