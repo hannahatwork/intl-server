@@ -3,8 +3,12 @@
     "title": "Démo de la traduction",
     "text": "Ceci est un exemple simple du ngx-translate",
     "greeting": "Salut {name}!",
+    "translationHeader": "Traduction (avec la pluralisation et le genre)",
+    "currencyHeader": "Le devise",
+    "dateTimeHeader": "Le temps",
     "languageSelection": "Sélectionnez votre langue",
     "currencySelection": "Sélectionnez votre devise",
+    "timezoneSelection": "Sélectionnez votre fuseau horaire",
     "localeSelection": "Sélectionnez votre endroit",
     "languages": {
       "fr": "Français",
@@ -14,12 +18,17 @@
       "EUR": "€",
       "USD": "$"
     },
+    "timezone": {
+      "boston": "Boston",
+      "phoenix": "Phoenix",
+      "paris": "Paris"
+    },
     "locale": {
       "en-EN": "United States",
       "fr-FR": "France"
     },
     "pluralization": {
-      "things": "Il {count, plural, =0{n'y a} one{y a} other{ya}} {count, plural, =0{} one{un} other{quelques}} {count, plural, =0{rien} one{chose} other{choses}}",
+      "things": "Il {count, plural, =0{n'y a} one{y a} other{y a}} {count, plural, =0{} one{un} other{quelques}} {count, plural, =0{rien} one{chose} other{choses}}",
       "people": "{gender, select, male{Il est} female{Elle est} other{Ils sont}} {gender, select, male{drôle} female{drôle} other{drôles}}"
     }
   },

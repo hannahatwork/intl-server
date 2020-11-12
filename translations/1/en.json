@@ -3,8 +3,12 @@
     "title": "Translation demo",
     "text": "This is a simple demonstration app for ngx-translate",
     "greeting": "Hello {name}!",
+    "translationHeader": "Translation (with pluralization and gender)",
+    "currencyHeader": "Currency",
+    "dateTimeHeader": "Time",
     "languageSelection": "Select language",
     "currencySelection": "Select currency",
+    "timezoneSelection": "Select timezone",
     "localeSelection": "Select locale",
     "languages": {
       "fr": "Français",
@@ -13,6 +17,11 @@
     "currency": {
       "EUR": "€",
       "USD": "$"
+    },
+    "timezone": {
+      "boston": "Boston",
+      "phoenix": "Phoenix",
+      "paris": "Paris"
     },
     "locale": {
       "en-EN": "United States",
